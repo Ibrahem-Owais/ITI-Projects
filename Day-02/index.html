@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NAME OF TAP -->
+    <title>Pizza </title>
+</head>
+
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav>
+            <a href="#">Main</a>
+            <a href="#">Make an Order</a>
+            <a href="#">Contact US</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- LOGO & INFO  -->
+        <h1>Black Goose Bistro | Pizza-on-Demand</h1>
+        <p>Our 12" wood-fired pizza are available for delivery, build your custom pizza and we'll deliver it within
+            an hour.</p>
+        <!-- SECTION OF INFORMATION OF PERSON -->
+        <section id="container">
+            <form method="post">
+                <section class="info">
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        <table>
+                            <tbody>
+                                <!-- INPUT OF NAME  -->
+                                <tr>
+                                    <td>
+                                        <label for="name">Name:</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="name" id="name" autofocus required>
+                                    </td>
+                                </tr>
+                                <!-- INPUT OF ADDRESS  -->
+                                <tr>
+                                    <td>
+                                        <label for="address">Address:</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="address" id="address" required>
+                                    </td>
+                                </tr>
+                                <!-- INPUT OF PHONE -->
+                                <tr>
+                                    <td>
+                                        <label for="tel">Telephone Number:</label>
+                                    </td>
+                                    <td>
+                                        <input type="tel" name="phone" id="tel" placeholder="01000000000" required>
+                                    </td>
+                                </tr>
+                                <!-- INPUT OF EMAIL -->
+                                <tr>
+                                    <td>
+                                        <label for="mail">Email:</label>
+                                    </td>
+                                    <td>
+                                        <input type="email" name="mail" id="mail" required>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- MESSEGE ARIA -->
+                        <label for="deliver">Deliver Instruction:</label>
+                        <br>
+                        <textarea name="Massege" id="deliver" cols="43" rows="4"
+                            placeholder="No more than 400 character long" maxlength="400"></textarea>
+                    </fieldset>
+                </section>
+                <!-- SECTION 2 -->
+                <section class="choose-pizaa">
+                    <h2>Design Your Dream Pizza:</h2>
+                    <fieldset>
+                        <!-- SECTION OF PIZAA DESIGN -->
+                        <legend>Pizza specs</legend>
+                        <fieldset>
+                            <legend>Crust (Choose one):</legend>
+                            <br>
+                            <!-- RADIO BUTTOT  -->
+                            <input type="radio" name="Crust" id="Crust" value="Classic White">
+                            <label for="Crust">Classic White</label>
+                            <br>
+                            <input type="radio" name="Crust" id="Multigrain" value="Multigrain">
+                            <label for="Multigrain">Multigrain</label>
+                            <br>
+                            <input type="radio" name="Crust" id="stuffed" value="stuffed crust">
+                            <label for="stuffed">stuffed crust</label>
+                            <br>
+                            <input type="radio" name="Crust" id="Gluten" value="Gluten-free">
+                            <label for="Gluten">Gluten-free</label>
+                            <br>
+                        </fieldset>
+                        <!-- CHECKBOX BUTTON  -->
+                        <fieldset>
+                            <legend>Toppings (Choose as many as you want):</legend>
+                            <br>
+                            <!-- RADIO BUTTOT  -->
+                            <input type="checkbox" name="Toppings" id="Red" value="Red Sauce">
+                            <label for="Red">Red Sauce</label>
+                            <br>
+                            <input type="checkbox" name="Toppings" id="White" value="White Sauce">
+                            <label for="White">White Sauce</label>
+                            <br>
+                            <input type="checkbox" name="Toppings" id="Mozzarella" value="Mozzarella Cheese">
+                            <label for="Mozzarella">Mozzarella Cheese</label>
+                            <br>
+                            <input type="checkbox" name="Toppings" id="Pepperoni" value="Pepperoni">
+                            <label for="Pepperoni">Pepperoni</label>
+                            <br>
+                            <input type="checkbox" name="Toppings" id="Mushrooms" value="Mushrooms">
+                            <label for="Mushrooms">Mushrooms</label>
+                            <br>
+                            <input type="checkbox" name="Toppings" id="Peppers" value="Peppers">
+                            <label for="Peppers">Peppers</label>
+                            <br>
+                            <input type="checkbox" name="Toppings" id="Anchovies" value="Anchovies">
+                            <label for="Anchovies">Anchovies</label>
+                        </fieldset>
+                        <!-- NUNBER OF PIZAA  -->
+                        <fieldset>
+                            <legend>Number</legend>
+                            <br>
+                            <label for="number">How many pizzas:</label>
+                            <input type="number" name="Number-of-piazza" id="number" size="1" min="1" max="50" required>
+                        </fieldset>
+                    </fieldset>
+                </section>
+                <br>
+                <!-- BUTTON TO SEND -->
+                <button type="submit">Bring me a pizza!</button>
+                <!-- BUTTON TO RESET -->
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
