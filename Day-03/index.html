@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="This web is my Portfolio">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <p class="logo">Ibrahim_Owais</p>
+        <!-- NAVIGATION LINKS  -->
+        <nav>
+            <a href="#about">about</a>
+            <a href="#skills">skills</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+    <hr>
+    <!-- MAIN CONTENT  -->
+    <main>
+        <div class="container">
+            <section class="hero" id="about">
+                <p>Hi,I'm Ibrahim</p>
+                <h1>Frontend <br> <span>Developer</span></h1>
+                <p>I build clean, modern and responsive websites
+                    <br>
+                    that help brands grow and stand out.
+                </p>
+                <img src="/Day-03/assets/images/Front-End-Development.jpeg" width="400" alt="Front-End-Development.">
+            </section>
+            <hr>
+            <!-- SECTION OF SKILLS -->
+            <section class="skills" id="skills">
+                <h2>My Skills</h2>
+                <!-- UNORDERED LIST FOR SKILLS  -->
+                <ul>
+                    <li>UI/UX Design</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <ol>
+                    <li>Idea</li>
+                    <li>Wireframe</li>
+                    <li>Design</li>
+                    <li>Development</li>
+                </ol>
+                <p><strong>I enjoy learning new technologies and creating clean, responsive, and user-friendly
+                        websites.</strong></p>
+            </section>
+            <hr>
+            <!-- SECTION OF COURSES -->
+            <section class="courses">
+                <h2>Courses</h2>
+                <table border="1" style="text-align: center;">
+                    <thead>
+                        <tr>
+                            <th>Course name</th>
+                            <th>Duration</th>
+                            <th>Situation</th>
+                        </tr>
+                    </thead>
+                    <!-- BODY OF DATA  -->
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>3 Hours</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>6 Hours</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>JAVASCRIPT</td>
+                            <td>12 Hours</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total Hour</td>
+                            <td>9 Hours</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <hr>
+            <!-- GALLERY SECTION  -->
+            <section class="gallery">
+                <h2>Gallery</h2>
+                <!-- CARD-1  -->
+                <figure class="card">
+                    <img src="/Day-03/assets/images/card-1.jpg" alt="HTML PHOTO" width="400">
+                    <figcaption>
+                        <p>HTML <strong>(HyperText Markup Language)</strong> is the standard markup
+                            language used to create
+                            and
+                            structure web pages, defining content and layout for browsers.</p>
+                    </figcaption>
+                </figure>
+                <!-- CARD-2  -->
+                <figure class="card">
+                    <img src="/Day-03/assets/images/card-2.png" alt="CSS PHOTO" width="400">
+                    <figcaption>
+                        <p>CSS <mark>(Cascading Style Sheets)</mark> is indeed a language, but it is not a programming
+                            language in
+                            the traditional sense. </p>
+                    </figcaption>
+                </figure>
+                <!-- CARD-3  -->
+                <figure class="card">
+                    <img src="/Day-03/assets/images/card-3.png" alt="JS PHOTO" width="400">
+                    <figcaption>
+                        <p>JavaScript, a cornerstone of modern web development, <em>was developed by Brendan Eich in
+                                1995
+                                while he was working at Netscape Communications Corporation.</em> </p>
+                    </figcaption>
+                </figure>
+            </section>
+            <hr>
+            <!-- SECTION OF CONTACT  -->
+            <section class="contact" id="contact">
+                <h2>Contact</h2>
+                <form action="" method="post">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="name">Name:</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="Name" id="name" required placeholder="Enter Your Name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">Email:</label>
+                                </td>
+                                <td>
+                                    <input type="email" name="Email" id="email" required
+                                        placeholder="example@gmail.com">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="phone">Phone:</label>
+                                </td>
+                                <td>
+                                    <input type="tel" name="Phone" id="phone" required placeholder="01000000000">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="message">Message:</label>
+                                </td>
+                                <td>
+                                    <textarea name="Message" id="message" placeholder="Enter Your Message"
+                                        cols="23"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="Subject">Select Subject:</label>
+                                </td>
+                                <td>
+                                    <select name="Subject" id="Subject" style="text-align: center;">
+                                        <option value="Landing Page">Landing Page</option>
+                                        <option value="Add another display language">Add another display language
+                                        </option>
+                                        <option value="Websites">Websites</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <!-- RADIO BUTTON  -->
+                            <tr>
+                                <td>
+                                    <input type="radio" name="contact-by" id="radio-phone">
+                                    <label for="radio-phone">Phone</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="contact-by" id="radio-email">
+                                    <label for="radio-email">Email</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="rolls" id="terms" required>
+                                    <label for="terms">Agree to the terms</label>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <div class="btn">
+                        <button type="submit">Send</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </section>
+            <br>
+            <hr>
+            <!-- SECTION OF FAQ -->
+            <section class="faq">
+                <h2>Questions</h2>
+                <details>
+                    <summary>What technologies do you work with?</summary>
+                    <p>HTML, CSS, JavaScript, React, Angular, etc.</p>
+                </details>
+                <details>
+                    <summary>What kind of websites do you build?</summary>
+                    <p>Responsive websites, landing pages, dashboards, portfolios, web applications...</p>
+                </details>
+                <details>
+                    <summary>Do you build responsive websites?</summary>
+                    <p>Yes, websites that work well on desktop, tablet, and mobile.</p>
+                </details>
+
+            </section>
+        </div>
+    </main>
+    <br>
+    <hr>
+    <footer>
+        <span>Email:</span>
+        <a href="mailto:elelnesr3@gmail.com" id="mail">elelnesr3@gmail.com</a>
+        <br>
+        <span>Phone</span>
+        <a href="tel:01114166311">01114166311</a>
+        <br>
+        <span>Location:</span>
+        <a href="https://maps.app.goo.gl/BmVJSZmqS9K3tLwr7" target="_blank">Cairo</a>
+        <p style="text-align: center;"><small>&copy; Created By <span>Ibrahim_Owais</span></small></p>
+    </footer>
+</body>
+
+</html>
