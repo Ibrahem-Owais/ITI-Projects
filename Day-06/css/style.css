@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+:root {
+    --main-color: #030917;
+    --hrader-color: #1c2639;
+    --text-color: #fff;
+    --border-color: gray;
+}
+
+header {
+    height: 50px;
+    background-color: var(--hrader-color);
+}
+
+header a,
+nav a {
+    color: var(--text-color);
+}
+
+#hero {
+    height: calc(100vh - 50px);
+    background-image: url(/assets/images/bg-gero-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#hero h1 {
+    cursor: pointer;
+}
+
+#hero>h1>span {
+    color: #596edd !important;
+}
+
+#hero>a {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    background-color: brown;
+    /* REM UNIT HAS SIZE FROME ROOT HTML  */
+    font-size: 1.5rem;
+}
+
+#about {
+    max-width: 400px;
+    max-height: 300px;
+    border: 1px solid var(--border-color);
+}
+
+#skills {
+    max-height: 30%;
+    border: 1px solid var(--border-color);
+}
+
+footer {
+    text-align: center;
+}
+
+footer small>span {
+    --local-color-span: #596edd;
+    color: var(--local-color-span);
+}
