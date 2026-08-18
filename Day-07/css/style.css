@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* THIS FONT HERE BEC I WANT ALL FONT STYLE THIS  */
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #FFF4F4;
+}
+
+#card {
+    background-color: #BDB2FF;
+    max-width: 400px;
+    height: 500px;
+    padding: 12px;
+    margin: 40px auto;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 5px 0 gray;
+}
+
+#card img {
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 8px auto 16px;
+    border: 5px solid #3A86FF;
+}
+
+.data {
+    background-color: #fff4f480;
+    width: 90%;
+    margin: 0 auto;
+    padding: 24px 16px;
+    border-radius: 12px;
+    line-height: 1.6;
+    box-shadow: 0 0 5px 0 gray;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2D3748;
+}
+
+.job {
+    color: #3A86FF;
+    font-weight: 600;
+    /* text-shadow: 1px 0 5px #3A86FF; */
+    margin-bottom: 8px;
+}
+
+#card>a.btn {
+    display: inline-block;
+    margin: 40px auto 0;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #3A86FF;
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+    color: #FFF4F4;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#card>a.btn:hover {
+    background-color: #3A86FF;
+}
