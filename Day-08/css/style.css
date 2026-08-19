@@ -42,7 +42,7 @@ nav a:hover {
 }
 
 #container {
-    background-image: url(/assets/images/background.jpg);
+    background-image: url(./assets/images/background.jpg);
     height: 50vh;
     background-position: center;
     background-size: cover;
