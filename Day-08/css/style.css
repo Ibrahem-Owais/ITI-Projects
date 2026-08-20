@@ -20,13 +20,11 @@ header {
 }
 
 .logo {
-    width: 10%;
     height: 80%;
 }
 
 .logo>img {
-    width: 100%;
-    height: 100%;
+    width: 140px;
 }
 
 nav a {
@@ -43,7 +41,7 @@ nav a:hover {
 
 #container {
     background-image: url(../assets/images/background.jpg);
-    height: 50vh;
+    height: 100vh;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -113,7 +111,8 @@ nav a:hover {
 
 .side {
     background-color: #ffffff;
-    width: 2%;
+    width: 3%;
+    height: 12%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -139,16 +138,15 @@ nav a:hover {
 
 /* SECTION_2 */
 #end-sec {
-    height: 50vh;
+    height: 100vh;
     background-color: #ffffff;
-    /* padding: 32px; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #end-sec .photo {
-    width: 22%;
+    width: 30%;
     margin-right: 32px;
 }
 
@@ -166,7 +164,6 @@ nav a:hover {
 .box-icon {
     display: flex;
     align-items: center;
-    /* margin-top: 20px; */
 }
 
 .box-icon>p {
