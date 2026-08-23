@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: var(--icons-btn-color);
+    color: var(--text-color);
+}
+
+:root {
+    --text-color: #ffffff;
+    --aside-color: #ffffff;
+    --main-color: #ffffff;
+    --socodry-color: #f8f8f8;
+    --icons-btn-color: #8e7754;
+}
+
+/* ASIDE OF ALL WEB */
+aside {
+    background-color: var(--aside-color);
+    width: 3.5%;
+    height: 13%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: fixed;
+    right: 0;
+    top: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99999;
+    box-shadow: 0 0 2px 0 rgba(128, 128, 128, 0.575) inset;
+}
+
+aside a {
+    color: #4b4446;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+aside a:hover {
+    color: #218fe6;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999999;
+    background-color: var(--icons-btn-color);
+    /*FROME LINE 25 TO LINE 39 I USED AI*/
+    animation: changeHeader linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0px 100px;
+}
+
+@keyframes changeHeader {
+    to {
+        background-color: #01010166;
+    }
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    animation-name: changeHeader;
+}
+
+nav ul li a {
+    display: inline-block;
+    height: 60px;
+    text-decoration: none;
+    margin-left: 22px;
+    color: var(--text-color);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    animation-name: changeHeader;
+}
+
+nav ul li a:focus {
+    border-top: 2px solid var(--icons-btn-color);
+}
+
+header .logo {
+    width: 350px;
+}
+
+header img {
+    width: 140px;
+    align-self: flex-start;
+}
+
+/* SECTION ONE AFTER HEADER  */
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #01010154;
+    position: absolute;
+}
+
+#sec-first {
+    position: relative;
+    background-image: url(../assets/images/bac-bg-ab.jpg);
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#sec-first h1 {
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    margin-bottom: 18px;
+    z-index: 999999;
+}
+
+#sec-first p {
+    z-index: 99999;
+}
+
+/* SECTION-2  */
+
+#socand-sec {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+.first-photo {
+    width: 42%;
+}
+
+#socand-sec img {
+    width: 100%;
+    height: auto;
+}
+
+.data-socand {}
+
+.data-socand h2 {
+    margin-bottom: 22px;
+}
+
+.data-socand p {
+    line-height: 1.6;
+    color: #686868;
+    margin-bottom: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    width: 10%;
+    opacity: 0.5;
+}
+
+.data-socand p:last-child {
+    margin-top: 22px;
+}
+
+/* LAST SEC  */
+#last-sec {
+    height: 100vh;
+    background-color: var(--socodry-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.last-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 18px;
+}
+
+.fa-inbox {
+    font-size: 40px;
+    color: var(--icons-btn-color);
+}
+
+.last-icon h2 {
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+.last-icon p {
+    color: #686868;
+    margin-bottom: 30px;
+}
+
+.line-one {
+    display: flex;
+    column-gap: 30px;
+    line-height: 2;
+}
+
+.line-one h3 {
+    font-weight: 300;
+}
+
+.line-one p {
+    color: #686868;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.line-two {
+    display: flex;
+    column-gap: 30px;
+    line-height: 2;
+}
+
+.line-two p {
+    color: #686868;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.line-two h3 {
+    font-weight: 300;
+}
+
+/* SECTION FOUR  */
+#sec-four {
+    height: 50vh;
+    background-color: var(--icons-btn-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.like {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: var(--text-color);
+}
+
+.like span {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.like p {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.fa-ico {
+    font-size: 32px;
+    color: var(--text-color);
+
+}
+
+
+
+
+
+/* FOOTER  */
+footer {
+    width: 100%;
+    background-color: #403d38;
+}
+
+#first-sec {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 0.8rem;
+}
+
+.contac-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.special {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#first-sec {
+    padding: 30px;
+}
+
+.about-foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h4 {
+    margin-bottom: 16px;
+    color: var(--text-color);
+}
+
+#end-logo {
+    background-color: #353330;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#end-logo p {
+    color: var(--text-color);
+}
+
+#end-logo img {
+    width: 300px;
+    margin-bottom: 16px;
+}
+
+.foot-icons {
+    margin: 16px 0;
+}
+
+.foot-icons>a {
+    background-color: var(--icons-btn-color);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    color: whitesmoke;
+}
+
+.about-foot p {
+    color: #969696;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.special p {
+    color: #969696;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #96969638;
+    width: 120%;
+}
+
+
+.special p:last-child {
+    border: none;
+}
+
+.opening p {
+    display: block;
+    padding: 10px 0;
+    color: #969696;
+    border-bottom: 1px solid #96969638;
+    width: 150%;
+}
+
+.opening p:last-child {
+    border: none;
+}
+
+
+.contac-details a {
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    color: #969696;
+    border-bottom: 1px solid #96969638;
+}
+
+.bottom-icon {
+    background-color: var(--icons-btn-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.bottom-icon a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-sec-contact .bottom-icon>a {
+    color: var(--text-color);
+    font-size: 24px;
+}
+
+.bottom-sec-contact {
+    margin-top: 16px;
+}
+
+.bottom-sec-contact p {
+    margin-bottom: 20px;
+}
+
+#contact-info {
+    height: 100vh;
+    background-color: var(--socodry-color);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-sec-side h2 {
+    margin-bottom: 20px;
+}
+
+.left-sec-side p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #686868;
+}
+
+.b-icons-icon {
+    height: 70px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.b-icons-icon a {
+    margin: 0;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #010101;
+}
+
+iframe {
+    width: 500px;
+    border: 1px solid var(--icons-btn-color) !important;
+    cursor: pointer;
+}

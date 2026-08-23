@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: var(--icons-btn-color);
+    color: var(--text-color);
+}
+
+:root {
+    --text-color: #ffffff;
+    --aside-color: #ffffff;
+    --main-color: #ffffff;
+    --socodry-color: #f8f8f8;
+    --icons-btn-color: #8e7754;
+}
+
+/* ASIDE OF ALL WEB */
+aside {
+    background-color: var(--aside-color);
+    width: 3.5%;
+    height: 13%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: fixed;
+    right: 0;
+    top: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99999;
+    box-shadow: 0 0 2px 0 rgba(128, 128, 128, 0.575) inset;
+}
+
+aside a {
+    color: #4b4446;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+aside a:hover {
+    color: #218fe6;
+}
+
+/* HEADER AN NAVIGATION BAR  */
+header {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999999;
+    background-color: var(--icons-btn-color);
+    /*FROME LINE 25 TO LINE 39 I USED AI*/
+    animation: changeHeader linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0px 100px;
+}
+
+@keyframes changeHeader {
+    to {
+        background-color: #01010166;
+    }
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    animation-name: changeHeader;
+}
+
+nav ul li a {
+    display: inline-block;
+    height: 60px;
+    text-decoration: none;
+    margin-left: 22px;
+    color: var(--text-color);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    animation-name: changeHeader;
+}
+
+nav ul li a:focus {
+    border-top: 2px solid var(--icons-btn-color);
+}
+
+header .logo {
+    width: 350px;
+}
+
+header img {
+    width: 140px;
+    align-self: flex-start;
+}
+
+
+/* SECTION ONE AFTER HEADER  */
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #01010154;
+    position: absolute;
+}
+
+#sec-first {
+    position: relative;
+    background-image: url(../assets/images/background.jpg);
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#sec-first h1 {
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-bottom: 18px;
+    z-index: 999999;
+    letter-spacing: 2px;
+}
+
+#sec-first p {
+    z-index: 99999;
+}
+
+.data-our-offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.data-our-offer a {
+    text-decoration: none;
+    color: #969696;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 99999;
+}
+
+/* SECTION OF CARDS  */
+
+#container-cards {
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#container-cards .card {
+    /* background-color: brown; */
+    width: fit-content;
+    padding: 15px;
+}
+
+#container-cards .card>.top-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #96969660;
+    margin-bottom: 12px;
+}
+
+#container-cards h2,
+span {
+    margin-bottom: 8px;
+    color: #010101;
+}
+
+#container-cards h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#container-cards span {
+    color: #969696;
+}
+
+#container-cards p {
+    line-height: 2;
+    font-family: "Inter", sans-serif;
+    color: #969696;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+}
+
+
+
+
+/* FOOTER  */
+footer {
+    width: 100%;
+    background-color: #403d38;
+    margin-top: 20px;
+}
+
+#first-sec {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 0.8rem;
+}
+
+.contac-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.special {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#first-sec {
+    padding: 30px;
+}
+
+.about-foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h4 {
+    margin-bottom: 16px;
+    color: var(--text-color);
+}
+
+#end-logo {
+    background-color: #353330;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#end-logo p {
+    color: var(--text-color);
+}
+
+#end-logo img {
+    width: 300px;
+    margin-bottom: 16px;
+}
+
+.foot-icons {
+    margin: 16px 0;
+}
+
+.foot-icons>a {
+    background-color: var(--icons-btn-color);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    color: whitesmoke;
+}
+
+.about-foot p {
+    color: #969696;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.special p {
+    color: #969696;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #96969638;
+    width: 120%;
+}
+
+
+.special p:last-child {
+    border: none;
+}
+
+.opening p {
+    display: block;
+    padding: 10px 0;
+    color: #969696;
+    border-bottom: 1px solid #96969638;
+    width: 150%;
+}
+
+.opening p:last-child {
+    border: none;
+}
+
+
+.contac-details a {
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    color: #969696;
+    border-bottom: 1px solid #96969638;
+}
+
+.bottom-icon {
+    background-color: var(--icons-btn-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.bottom-icon a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-sec-contact .bottom-icon>a {
+    color: var(--text-color);
+    font-size: 24px;
+}
+
+.bottom-sec-contact {
+    margin-top: 16px;
+}
+
+.bottom-sec-contact p {
+    margin-bottom: 20px;
+}
