@@ -1,0 +1,287 @@
+# 🧠 Task - JavaScript (ES6 + Loops + Higher Order Functions)
+
+# Part 1 - Choose
+
+### 1) إيه اللي بيرجعه `map()` ؟
+
+- [ ] أول عنصر يحقق شرط
+- [This] Array جديدة بنفس الطول
+- [ ] Boolean
+- [ ] Number
+
+---
+
+### 2) مين فيهم بيرجع أول عنصر يحقق الشرط؟
+
+- [ ] filter()
+- [ ] map()
+- [This] find()
+- [ ] forEach()
+
+---
+
+### 3) `filter()` بيرجع...
+
+- [ ] أول عنصر
+- [This] Array جديدة بالعناصر اللي حققت الشرط
+- [ ] Number
+- [ ] String
+
+---
+
+### 4) `forEach()` بيرجع...
+
+- [ ] Array جديدة
+- [ ] أول عنصر
+- [This] undefined
+- [ ] Boolean
+
+---
+
+### 5) `for...of` بنستخدمها غالباً مع...
+
+- [ ] Objects
+- [This] Arrays
+- [ ] Functions
+- [ ] Classes
+
+---
+
+# Part 2 - True or False
+
+1. `map(Fulse)` بيغير الـ Array الأصلية.
+2. `filter(True)` ممكن يرجع Array فاضية.
+3. `find(True)` ممكن يرجع undefined.
+4. `for...in` بيلف على الـ Index بتاع الـ Array.(True)
+5. `forEach(Fulse)` ينفع أعمل بيها break.
+
+---
+
+# Part 3 - Compelete the following
+
+## Q1
+
+خلي الكود يطبع:
+
+```
+2
+4
+6
+8
+```
+
+```js
+const numbers = [1,2,3,4];
+
+numbers.___forEach_____((num)=>{
+    console.log(num * 2);
+});
+```
+
+---
+
+## Q2
+
+طلع Array فيها الأرقام الأكبر من 20.
+
+```js
+const nums = [10,25,5,30,15,40];
+
+const result = nums.____filter____((num)=>{
+    return num > 20;
+});
+
+console.log(result);
+```
+
+---
+
+## Q3
+
+هات أول شخص عمره أكبر من 25.
+
+```js
+const users = [
+    {name:"Ali", age:20},
+    {name:"Sara", age:28},
+    {name:"Omar", age:30}
+];
+
+const user = users.____find____((item)=>{
+    return item.age > 25;
+});
+
+console.log(user);
+```
+
+---
+
+## Q4
+
+حوّل كل الأسماء لـ Uppercase.
+
+```js
+const names = ["ali","mona","ahmed"];
+
+const result = names._____map___((name)=>{
+    return name.toUpperCase();
+});
+
+console.log(result);
+```
+
+---
+
+# Part 4 - To Do
+
+## عندك الـ Array دي
+
+```js
+const fruits = ["Apple","Banana","Orange"];
+```
+
+### 1)
+
+اطبع كل عنصر باستخدام `for...of`
+
+
+for (const fruit of fruits) {
+    console.log(fruit)
+}
+---
+
+### 2)
+
+اطبع الـ Index باستخدام `for...in`
+
+---
+
+for (const index in fruits) {
+    console.log(index)
+}
+
+
+### 3)
+
+اطبع بالشكل ده باستخدام `forEach`
+
+```
+0 -> Apple
+1 -> Banana
+2 -> Orange
+```
+
+---
+
+# Part 5 - To Do
+
+## Q1
+
+حوّل الكود لـ Arrow Function
+
+```js
+function sum(a,b){
+    return a+b;
+}
+```
+const sum = (a,b) => a + b;
+
+---
+
+## Q2
+
+استخدم Destructuring
+
+```js
+const user = {
+    name:"Mostafa",
+    age:25
+};
+```
+
+خد `name` و `age` في متغيرات.
+
+---const { name, age } = user;
+console.log(user)
+
+
+## Q3
+
+استخدم Template Literal
+
+بدل
+
+```js
+console.log(`Hello ${name}`);
+```
+
+---
+
+## Q4
+
+استخدم Spread Operator
+
+```js
+const arr1 = [1,2,3];
+const arr2 = [4,5,6];
+```
+
+اعمل Array واحدة فيها الكل.
+
+---const combined = [...arr1, ...arr2];
+console.log(combined)
+
+# Part 6 - Many Q
+
+عندك البيانات دي:
+
+```js
+const students = [
+    {name:"Ali", degree:70},
+    {name:"Sara", degree:95},
+    {name:"Ahmed", degree:40},
+    {name:"Mona", degree:85},
+    {name:"Omar", degree:55}
+];
+```
+
+## Required
+
+### 1)
+
+اعمل Array فيها أسماء الطلبة بس.
+
+---const studentName = students.map((student) => student.name);
+console.log(studentName);
+
+### 2)
+
+اعمل Array فيها الطلبة اللي درجاتهم أكبر من أو تساوي 60.
+
+---const Topstudent = students.filter((student) => student.degree >= 60);
+console.log(Topstudent);
+
+### 3)
+
+هات أول طالب درجته أكبر من 90.
+
+---const Topstudent = students.find((student) => student.degree > 90);
+console.log(Topstudent);
+
+### 4)
+
+اطبع أسماء كل الطلبة باستخدام `forEach()`.
+
+---students.forEach((student) => {console.log(student.name)})
+
+# Bonus
+
+بدون استخدام Loop عادية (`for` أو `while`)
+
+احسب مجموع الأرقام دي باستخدام `reduce()` لو فاكرها أو دور عليها في الـ MDN 
+```js
+const numbers = [5,10,15,20];
+const sum = nambers.reduce((num1, num2) => num1 + num2, 0);
+console.log(sum)
+
+```
