@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK OF BOOTSTRAP  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- LINK OF CSS FILE  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- TITLE OF NAME  -->
+    <title>To-Do</title>
+</head>
+
+<body>
+    <main>
+        <!-- MAIN CONTAINER OF CONTENT  -->
+        <div class="vh-100 d-flex justify-content-center align-items-center bg-light">
+
+            <!-- DIV OF CARD CONTAINER  -->
+            <div class="card p-4 shadow-sm border-0" style="width: 400px; border-radius: 12px;">
+
+                <!-- HEADING OF NAME  -->
+                <h3 class="fw-bold text-center mb-4">My To-Do List</h3>
+
+                <!-- CONTAINER OF INPUT & BUTTON  -->
+                <div class="input-group mb-3">
+                    <!-- INPUT FOR ADD A NEW TASK  -->
+                    <input type="text" id="taskInput" class="form-control" placeholder="Add a new task..."
+                        aria-label="Add a new task">
+
+                    <!-- BUTTOT OF ADD TASK  -->
+                    <button class="btn btn-primary fw-bold px-3" type="button" id="addBtn">Add</button>
+                </div>
+
+                <!-- UNORDERD LIST TO HAVE A TASKS  -->
+                <ul class="list-group list-group-flush" id="taskList">
+
+
+                    <li
+                        class="list-group-item d-flex justify-content-between align-items-center px-0 py-2 border-bottom">
+
+                        <span>New Task</span>
+
+                        <!-- BOX OF BTN TO EDIT IN TASK  -->
+                        <div>
+
+                            <button class="btn btn-sm text-warning p-0 border-0 me-2" type="button">
+                                <!-- ICON  -->
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </button>
+
+                            <!-- DELET BUTTON  -->
+                            <button class="btn btn-sm text-secondary p-0 border-0" type="button">
+                                <!-- ICON -->
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER OF PAGE  -->
+    <footer class="text-center">
+        <p>&copf; Created By <span>Ibrahim_Owais</span></p>
+    </footer>
+    <script src="https://kit.fontawesome.com/58ff671760.js" crossorigin="anonymous"></script>
+    <!-- LINK OF JS FILE  -->
+    <script src="./js/main.js"></script>
+    <!-- LINK OF JS BOOTSTRAP  -->
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

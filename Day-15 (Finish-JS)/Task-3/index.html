@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK OF BOOTSTRAP  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- LINK OF CSS FILE  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- TITLE OF NAME  -->
+    <title>CRUD_SYSTEM</title>
+</head>
+
+<body class="bg-light py-5">
+    <!-- MAIN CONTAINER -->
+    <main>
+        <!-- FORM CONTAINER  -->
+        <form action="" method="post">
+            <div class="container" style="max-width: 900px;">
+                <div class="p-4 rounded-4 shadow-sm text-white mb-4" style="background-color: #838a92;">
+
+                    <!-- TITLE -->
+                    <h1 class="text-center text-dark fw-bold mb-4">CRUD SYSTEM</h1>
+
+                    <!-- PRODUCT NAME -->
+                    <div class="mb-3">
+                        <input type="text" id="productName" class="form-control" placeholder="Product Name">
+                    </div>
+
+                    <!-- PRODUCT PRICE -->
+                    <div class="mb-3">
+                        <input type="number" id="productPrice" class="form-control" placeholder="Product Price">
+                    </div>
+
+                    <!-- PRODUCT CATEGORY -->
+                    <div class="mb-3">
+                        <input type="text" id="productCategory" class="form-control" placeholder="Product Category">
+                    </div>
+
+                    <!-- PRODUCT DESCRIPTION -->
+                    <div class="mb-3">
+                        <textarea id="productDescription" class="form-control" rows="3"
+                            placeholder="Product Description"></textarea>
+                    </div>
+
+                    <!-- FILE INPUT -->
+                    <div class="mb-3">
+                        <label for="productImage" class="form-label text-dark fs-6 mb-1">Product Image</label>
+                        <input type="file" id="productImage" class="form-control">
+                    </div>
+
+                    <!-- ADD BUTTON -->
+                    <button type="button" class="btn btn-primary fw-bold px-4" id="mainBtn">Add Product</button>
+                </div>
+
+                <!-- SEARCH INPUT -->
+                <div class="mb-4">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search By Name....">
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <!-- FOOTER OF PAGE  -->
+    <footer class="text-center" style="background-color: #838a92; height: 5vh;">
+        <p>&copf; Created By <span>Ibrahim_Owais</span></p>
+    </footer>
+    <script src="https://kit.fontawesome.com/58ff671760.js" crossorigin="anonymous"></script>
+    <!-- LINK OF JS FILE  -->
+    <script src="./js/main.js"></script>
+    <!-- LINK OF JS BOOTSTRAP  -->
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
